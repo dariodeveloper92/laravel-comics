@@ -1,3 +1,34 @@
 header {
-    text-align: center;
+    width: 100%;
+    height: 15vh;
+
+    #header_to {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-around;
+
+        img {
+            width: 70%;
+            height: 100%;
+            object-fit: contain;
+            display: flex;
+        }
+    }   
+}
+
+#header_bottom {
+    width: 100%;
+    height: 100%;
+    #jumbotron {
+        width: 100%;
+        height: 20vh;  
+        position: relative;
+        img {
+            width: 100%;
+            //height: 100%;
+            position: absolute;
+            object-fit: contain;
+        }
+    }
 }
