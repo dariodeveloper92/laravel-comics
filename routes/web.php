@@ -13,12 +13,14 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('home');
-});
 
-Route::get('/characters', function () {
-    return view('characters');
+/* Characters */
+Route::get('/', function () {
+    $array_comics = config('comics');
+    $data = [
+        'comics' => $array_comics
+    ];
+    return view('characters', $data);
 });
 
 /* Comics */
@@ -30,7 +32,12 @@ Route::get('/comics', function () {
     return view('comics', $data);
 });
 
+/* Movies */
 Route::get('/movies', function () {
-    return view('movies');
+    $array_comics = config('comics');
+    $data = [
+        'comics' => $array_comics
+    ];
+    return view('movies', $data);
 });
 

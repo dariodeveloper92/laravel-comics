@@ -1,8 +1,16 @@
+
 @extends('layouts.app')
 {{-- Titolo --}}
-@section('titolo', 'Characters')
+@section('titolo', 'Movies')
 
-{{-- main --}}
+{{-- main - movies --}}
 @section('contenuto')
-    <h1> Contenuto characters</h1>    
-@endsection
+    <h1> Contenuto comics</h1>    
+    <li><a href="/comics"> Series: </a></li>
+    @foreach ($comics as $comic)
+        {{ $comic['title'] }}
+        <br/>
+        {{ $comic['series'] }}
+        <br/>
+    @endforeach
+@endsection     

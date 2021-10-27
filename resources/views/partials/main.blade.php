@@ -1,4 +1,4 @@
-{{-- <div id="container-main-bottom">
+<div id="container-main-bottom">
     <div class="container-icons">
         <ul>
             <li>
@@ -33,4 +33,4 @@
             </li>
         </ul>
     </div>
-</div> --}}
+</div>

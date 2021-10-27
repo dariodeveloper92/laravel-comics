@@ -15,8 +15,6 @@
        @yield('contenuto')
     </main>
     
-    {{-- importo i partials.main --}}
-    @include('partials.main')
     {{-- importo i partials.footer --}}
     @include('partials.footer')
 </body>

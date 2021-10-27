@@ -2,14 +2,20 @@
 {{-- Titolo --}}
 @section('titolo', 'Comics')
 
-{{-- main --}}
-@section('contenuto')
+ {{-- main - comics --}}
+ @section('contenuto')
     <h1> Contenuto comics</h1>    
-    <li><a href="/comics"> FUMETTI: </a></li>
+    <li><a href="/comics"> Prezzo: </a></li>
     @foreach ($comics as $comic)
         {{ $comic['title'] }}
         <br/>
+        {{ $comic['price'] }}
+        <br/>
     @endforeach
+@endsection 
+    {{-- <div class="buttonBottom">
+        <button class="buttonBlue"> LOAD MORE </button>
+    </div>
     <div id="container-main-bottom">
         <div class="container-icons">
             <ul>
@@ -45,6 +51,5 @@
                 </li>
             </ul>
         </div>
-    </div>
-
-@endsection
+    </div> --}}
+    
