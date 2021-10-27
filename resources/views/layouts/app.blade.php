@@ -7,13 +7,14 @@
     <title> @yield('titolo') </title>
 </head>
 <body>
-    {{-- importo i partials --}}
+    {{-- importo i partials.header --}}
     @include('partials.header')
-
+    
+    {{-- main --}}
     <main>
-        @yield('contenuto')
+       @yield('contenuto')
     </main>
-
+    {{-- importo i partials.footer --}}
     @include('partials.footer')
 </body>
 </html>

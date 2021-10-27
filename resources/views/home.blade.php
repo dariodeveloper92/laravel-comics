@@ -1,5 +1,6 @@
 @extends('layouts.app')
 
+{{-- Titolo --}}
 @section('titolo', 'Homepage')
 
 {{-- main --}}

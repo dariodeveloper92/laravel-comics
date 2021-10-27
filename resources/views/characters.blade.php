@@ -1,5 +1,5 @@
 @extends('layouts.app')
-
+{{-- Titolo --}}
 @section('titolo', 'Characters')
 
 {{-- main --}}

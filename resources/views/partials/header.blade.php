@@ -16,6 +16,8 @@
     </div>
     <div id="header_bottom">
         <h1>Header Bottom</h1>
-        <img src="" alt="">
+        <div id="jumbotron">
+            <img src="{{ asset('images/jumbotron.jpg') }}" alt="">
+        </div>
     </div>
 </header>

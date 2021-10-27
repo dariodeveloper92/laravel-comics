@@ -21,7 +21,16 @@ Route::get('/characters', function () {
     return view('characters');
 });
 
+/* Comics */
 Route::get('/comics', function () {
-    return view('comics');
+    $array_comics = config('comics');
+    $data = [
+        'comics' => $array_comics
+    ];
+    return view('comics', $data);
+});
+
+Route::get('/movies', function () {
+    return view('movies');
 });
 
