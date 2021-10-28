@@ -4,11 +4,14 @@
 
 {{-- main - movies --}}
 @section('contenuto')
-    <h1> Contenuto comics</h1>    
-    <li><a href="/comics"> FUMETTI: </a></li>
-    @foreach ($comics as $comic)
-        {{ $comic['title'] }}
-        <br/>
-        {{ $comic['series'] }}
-        <br/>
+    <div class="container_movies">
+        <h1> Contenuto Movies</h1>    
+        <li><a href="/comics"> FUMETTI: </a></li>
+        @foreach ($comics as $comic)
+            {{ $comic['title'] }}
+            <br/>
+            {{ $comic['series'] }}
+            <br/>
+        @endforeach
+    </div>
 @endsection 

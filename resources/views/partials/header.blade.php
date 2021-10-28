@@ -12,9 +12,9 @@
             <img src="{{ asset('images/dc-logo.png') }}" alt="logo dc">
         </a>
         <ul>
-            <li><a href="/">Homepage</a></li>
-            <li><a href="/characters">Characters</a></li>
+            <li><a href="/">Characters</a></li>
             <li><a href="/comics">Comics</a></li>
+            <li><a href="/movies">Movies</a></li>
         </ul>
     </div>
     <div id="header_bottom">
