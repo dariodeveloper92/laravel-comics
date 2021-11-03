@@ -3,16 +3,21 @@
 {{-- Titolo --}}
 @section('titolo', 'Characters')
 
-{{-- main - movies --}}
+{{-- main - characters --}}
 @section('contenuto')
     <div class="container_characters">
-        <h1> Contenuto Characters</h1>    
-        <li><a href="/comics"> Series: </a></li>
+        <div class="text_img">
+            <h1> Contenuto Characters</h1>    
+            <li><a class="button_title" href="/comics"> Series: </a></li>
+            <br>
+        </div>
         @foreach ($comics as $comic)
-        <h2>{{ $comic['title'] }}</h2>
+        <div >
+            <h2>{{ $comic['title'] }}</h2>
             <br/>
             <p>{{ $comic['description'] }}</p>
             <br/>
+        </div>
         @endforeach
     </div>
 @endsection     
