@@ -9,9 +9,9 @@
         <h1> Contenuto Characters</h1>    
         <li><a href="/comics"> Series: </a></li>
         @foreach ($comics as $comic)
-            {{ $comic['title'] }}
+        <h2>{{ $comic['title'] }}</h2>
             <br/>
-            {{ $comic['series'] }}
+            <p>{{ $comic['description'] }}</p>
             <br/>
         @endforeach
     </div>
